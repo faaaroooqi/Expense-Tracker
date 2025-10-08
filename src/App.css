@@ -1,0 +1,183 @@
+/* Main container */
+.app-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  margin: 20px 40px;
+  align-items: flex-start;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  max-width: 500px;
+  margin-left:180px;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; 
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+
+/* Card */
+.card {
+  padding: 2em;
+  border-bottom: 2px solid green;
+  border-top: 2px solid red;
+  border-radius: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Headings */
+.heading {
+  margin: 30px 0;
+  font-size: large;
+}
+
+/* Input fields */
+input[type=number],
+input[type=text] {
+  width: 90%;
+  height: 32px;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid blue;
+  background-color: gray;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background-color: gray;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 10px;
+  background-color: lightblue;
+  color: blue;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: lightskyblue;
+}
+
+.clear-btn {
+  background-color: #ffcccc;
+  color: red;
+  margin-left: 10px;
+}
+
+.clear-btn:hover {
+  background-color: #ff9999;
+}
+
+/* Summary */
+.summary {
+  margin-top: 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+/* Transactions */
+.transactions-list {
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.transaction {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  background-clip: padding-box;
+}
+
+.transaction-content {
+  display: flex;
+  gap: 20px; /* space between name and amount */
+  flex: 1;
+}
+
+.income {
+  background-color: #d4f7d4; /* green */
+  color: green;
+}
+
+.expense {
+  background-color: #f7d4d4; /* red */
+  color: red;
+}
+
+/* Actions (edit/delete icons) */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.actions svg {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.actions svg:hover {
+  transform: scale(1.3);
+  opacity: 0.8;
+}
+
+/* Charts section */
+.charts {
+  width: 100%;
+  text-align: center;
+}
+
+.charts h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+.chart-divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #4caf50, #2196f3, #f44336); /* green → blue → red */
+  margin: 10px 0;
+  border-radius: 2px;
+}
+.confirm-toast {
+  margin-top: 10px;
+  background: #1a1a1a;
+  border: 1px solid aquamarine;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
