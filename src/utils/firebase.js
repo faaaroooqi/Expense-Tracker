@@ -1,5 +1,13 @@
+// src/utils/firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+
+// Debug: Check if environment variables are loaded
+console.log('Firebase Config:', {
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY ? 'Loaded' : 'Missing',
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN ? 'Loaded' : 'Missing',
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID ? 'Loaded' : 'Missing'
+});
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
